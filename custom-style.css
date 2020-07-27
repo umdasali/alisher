@@ -1,0 +1,237 @@
+{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/tab2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.primary-text {
+    display: block;
+    color: white;
+    font-size: 4rem;
+}
+
+.secondary-text {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+
+    .primary-text {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .secondary-text {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+ .contact-head-primary {
+        margin-top: 40%;
+    }
+}
+
+.contact-head-primary {
+    margin-top: 17%;
+}
+
+.btn-primary {
+    border: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    margin: 2rem;
+    transition: 1s;
+}
+
+.btn-primary:hover {
+    background-color: #039be5;
+    border: 2px solid #039be5;
+}
+
+.heading-bar {
+    width: 40px;
+    height: 4px;
+    color: black;
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.icon-cen {
+    margin-left: 39%;
+}
+
+.bar-group {
+    width: 90%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.bar-group ul li {
+    width: 90%;
+    height: 20px;
+    list-style: none;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar-group ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.bar-group ul li:after,
+.bar-group ul li:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    content: "";
+    width: 0%;
+}
+
+.bar-group ul li:after {
+    width: 30%;
+    background: #06bac7;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.active-bar ul li:before {
+    background: #056269;
+    transition: 2s;
+}
+
+.bar-group ul li:nth-child(1):after {
+    content: "HTML";
+}
+
+.bar-group ul li:nth-child(2):after {
+    content: "CSS";
+}
+
+.bar-group ul li:nth-child(3):after {
+    content: "JAVASCRIPT";
+}
+
+.bar-group ul li:nth-child(4):after {
+    content: "BOOTSTRAP";
+}
+
+.bar-group ul li:nth-child(5):after {
+    content: "PHOTOSHOP";
+}
+
+.bar-group ul li:nth-child(6):after {
+    content: "MATERIALIZE";
+}
+
+.active-bar ul li:nth-child(1):before {
+    width: 80%
+}
+
+.active-bar ul li:nth-child(2):before {
+    width: 70%
+}
+
+.active-bar ul li:nth-child(3):before {
+    width: 70%
+}
+
+.active-bar ul li:nth-child(4):before {
+    width: 75%
+}
+
+.active-bar ul li:nth-child(5):before {
+    width: 65%
+}
+
+.active-bar ul li:nth-child(6):before {
+    width: 65%
+}
+
+/*-------------------------------------------------------------
+
+                contact section
+
+---------------------------------------------------------------*/
+.bg-contact {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(-45deg, rgba(37, 41, 52, 1), rgba(37, 41, 52, 1)), url("images/bg-con.jpg");
+    clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.form-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-ar-message {
+    height: 110px;
+    background-color: #1d232b;
+}
+
+.btn-submit {
+    display: block;
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    padding: 5px 20px 5px 20px;
+}
+
+.btn-submit:hover {
+    border: 1px solid cyan;
+    color: cyan;
+}
+
+.social-icon {
+    height: 30vh;
+    background-color: #1b242f;
+}
+
+.social-icon {
+    position: relative;
+    display: block;
+}
+
+.half-btn {
+    position: absolute;
+    top: -10%;
+    left: 48%;
+    transform: translate(-50%; )
+}
+
+.icon-box-foot {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+
+}

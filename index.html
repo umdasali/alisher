@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="custom-style.css">
+<!--  <link rel="stylesheet" href="fontawesome/css/all.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="animate.css">
+  <title>my portfolio</title>
+</head>
+<style>
+    .sticky{
+        position:fixed;
+        top:0;
+        width: 100%;
+        z-index: 100;
+    }
+</style>
+<body onload="myFunction()">
+ 
+  <header id="home" class="section scrollspy">
+    <div class="box">
+      <span class="primary-text wow fadeInLeft">Hello, I'm <i style="color:deeppink; font-style: normal"> Md Ali Sher Ali</i></span>
+      <span class="secondary-text wow fadeInRight">I'm a front-end web developer</span>
+      <a href="" class="btn-primary wow fadeIn">View my work <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </header>
+  <!-- nav-bar-->
+  <nav  id="nabvar">
+    <div class="nav-wrapper black darken-4">
+      <a href="#" class="brand-logo center"></a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+      <ul class="left hide-on-med-and-down" >
+        <li><a href="#home" class="pink-text darken-4">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav grey darken-4" id="mobile-nav">
+    <li><a href="#home" class="white-text">HOME</a></li>
+    <li><a href="#about" class="white-text">ABOUT</a></li>
+    <li><a href="#services" class="white-text">SERVICES</a></li>
+    <li><a href="#work" class="white-text">WORK</a></li>
+    <li><a href="#contact" class="white-text">CONTACT US</a></li>
+  </ul>
+  <!--about-section-->
+  <section class="container" id="about">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h2 class="center wow fadeInUp">About</h2>
+        <div class="black heading-bar wow fadeInUp"></div>
+
+      </div>
+      <div class="col s6 l3 wow fadeInUp">
+        <a href="" class="icon-cen"><i class="fa fa-tachometer fa-4x"></i></a>
+        <h4 class="center">Fast</h4>
+        <p class="center">fast load time and interaction free my highest priority</p>
+      </div>
+      <div class="col s6 l3 wow fadeInUp">
+        <a href="" class="icon-cen"><i class="fa fa-mobile fa-4x"></i></a>
+        <h4 class="center">Responsive</h4>
+        <p class="center">My layout will work on any device. dosen't matter big or small</p>
+      </div>
+      <div class="col s6 l3 wow fadeInUp">
+        <a href="" class="icon-cen"><i class="fa fa-bolt fa-4x"></i></a>
+        
+        <h4 class="center">Instuitive</h4>
+        <p class="center">Strong preference for easy to use. intuitive UX/UI</p>
+      </div>
+      <div class="col s6 l3 wow fadeInUp">
+        <a href="" class="icon-cen"><i class="fa fa-rocket fa-4x"></i></a>
+        <h4 class="center">Dynemic</h4>
+        <p class="center">Website don't to be static, i love making pages come to life.</p>
+      </div>
+    </div>
+  </section>
+  <!--skills section-->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 m6 l6 center wow fadeInLeft">
+        <img src="images/4.jpg" alt="" class="responsive-img" style="clip-path:polygon(23% 0%,79% 0%,100% 53%,79% 100%,23% 100%,0% 52%)">
+        <h5>Who's this guy?</h5>
+        <p>I'm a Fornt-End Developer. I have serious passion for UI effects. animations and creating intuitive. dynemic user experiences.</p>
+        <a href="">let's make something special</a>
+      </div>
+      <div class="col s12 m6 l6">
+        <div class="bar-group" id="barpro">
+          <ul>
+            <li class="grey lighten-3">80%</li>
+            <li class="grey lighten-3">70%</li>
+            <li class="grey lighten-3">70%</li>
+            <li class="grey lighten-3">75%</li>
+            <li class="grey lighten-3">65%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--skills section-->
+  <section class="container section scrollspy" id="work">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h2 class="center">PROJECTS</h2>
+        <div class="black heading-bar"></div>
+      </div>
+      <div class="col s12 m12 l12">
+        <ul id="tabs-swipe-demo" class="tabs">
+          <li class="tab col s3"><a class="black-text active" href="#test1">ALL</a></li>
+          <li class="tab col s3"><a class="black-text" href="#test2">JAVASCRIPT</a></li>
+          <li class="tab col s3"><a class="black-text" href="#test3">BOOTSTRAP</a></li>
+          <li class="tab col s3"><a class="black-text" href="#test4">MATERIALIZE</a></li>
+        </ul>
+      </div>
+      <div id="test1" class="col s12 m12 l12">
+        <img src="images/tab1.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab2.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab3.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab4.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab5.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab7.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab6.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab8.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+        <img src="images/tab9.jpg" alt="" class="responsive-img col s12 m4 l4 wow fadeInUp">
+      </div>
+      <div id="test2" class="col s12 m12 l12">
+        <img src="images/tab1.jpg" alt="" class="responsive-img col s12 m4 l4">
+        <img src="images/tab2.jpg" alt="" class="responsive-img col s12 m4 l4">
+        <img src="images/tab9.jpg" alt="" class="responsive-img col s12 m4 l4">
+      </div>
+      <div id="test3" class="col s12 m12 l12">
+        <img src="images/tab3.jpg" alt="" class="responsive-img col s12 m4 l4">
+        <img src="images/tab4.jpg" alt="" class="responsive-img col s12 m4 l4">
+        <img src="images/tab8.jpg" alt="" class="responsive-img col s12 m4 l4">
+      </div>
+      <div id="test4" class="col s12 m12 l12">
+        <img src="images/tab5.jpg" alt="" class="responsive-img col s12 m4 l4">
+        <img src="images/tab6.jpg" alt="" class="responsive-img col s12 m4 l4">
+        <img src="images/tab7.jpg" alt="" class="responsive-img col s12 m4 l4">
+      </div>
+    </div>
+  </section>
+  <!--blogs section-->
+  <section class="container section scrollspy">
+    <div class="row">
+      <div class="col s12 m12 l12 wow fadeInUp">
+        <h2 class="center">BLOGS</h2>
+        <div class="black heading-bar"></div>
+      </div>
+      <div class="col s12 m6 l3 wow fadeInUp">
+        <img src="images/tab4.jpg" alt="" class="responsive-img">
+        <h5>Breaking your coder's blocks</h5>
+        <p>JULY-21-2020</p>
+        <div class="cyan accent-3 heading-bar left"></div>
+        <p class="left">At one time or another, as a developer, we’ve all found ourselves hopelessly stuck on a coding issue we had to solve...</p>
+      </div>
+      <div class="col s12 m6 l3 wow fadeInUp">
+        <img src="images/tab1.jpg" alt="" class="responsive-img">
+        <h5>!Awake: This is your Brain on caffeine</h5>
+        <p>JULY-21-2020</p>
+        <div class="cyan accent-3 heading-bar left"></div>
+        <p class="left">If there is one thing i can turly claim to be expert on . it's staying awake for five years i struggled to stay employed...</p>
+      </div>
+      <div class="col s12 m6 l3 wow fadeInUp">
+        <img src="images/tab2.jpg" alt="" class="responsive-img">
+        <h5>Getting a handle on handlebars</h5>
+        <p>JULY-21-2020</p>
+        <div class="cyan accent-3 heading-bar left"></div>
+        <p class="left">Here at Eyecue lab we render most of our data-laden HTML pages in Handlebar templetes...</p>
+      </div>
+      <div class="col s12 m6 l3 wow fadeInUp">
+        <img src="images/tab3.jpg" alt="" class="responsive-img">
+        <h5>5 Extension for Chrome Toolbelt</h5>
+        <p>JULY-21-2020</p>
+        <div class="cyan accent-3 heading-bar left"></div>
+        <p class="left">If you are using google chrome as front end web developer. you're missing out only is chrome the...</p>
+      </div>
+    </div>
+  </section>
+  <!--CONTACT section-->
+  <section id="contact" class="section scrollspy">
+    <div class="row">
+      <div class="bg-contact">
+        <div class="col s12 m12 l12">
+          <h2 class="center white-text contact-head-primary wow fadeInUp">CONTACT</h2>
+          <div class="white heading-bar wow fadeInUp"></div>
+          <p class="cyan-text accent-3 center">have question and want to work together</p>
+          <div class="col s12 m5 l5 center">
+            <div class="form-box ">
+              <form action="" class="wow fadeIn">
+                <input class=" white-text" type="text" placeholder="  NAME" style="margin-bottom:2px; background-color:#1d232b;">
+                <input class=" white-text" type="email" placeholder="  ENTER E-MAIL" style="margin-bottom:2px; background-color:#1d232b;">
+                <textarea class="input-ar-message white-text" name="" id="" rows="3" placeholder="  MESSAGE"></textarea>
+              </form>
+              <a href="#" class="btn-submit right">submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer social-icon">
+       <div class="center-align half-btn">
+           <a class="btn pink " href="#home" style="top:25px;"><i class="fas fa-angle-double-up"></i></a>
+       </div>
+        <div class="icon-box-foot">
+           <div class="icon-res">
+            <a class="btn blue-grey darken-4" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn blue-grey darken-4" href=""><i class="fab fa-facebook-square"></i></a>
+            <a class="btn blue-grey darken-4" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn blue-grey darken-4" href=""><i class="fab fa-codepen"></i></a>
+             <p>MD ALI SHER ALI <span class="pink-text">&copy; 2020</span></p>
+            </div>
+           
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--script-->
+  <script src="jquery/jquery.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script src="custom-script.js"></script>
+  <script src="jquery/wow.js"></script>
+  <script src="jquery/wow.min.js"></script>
+  <script>
+    function myFunction() {
+      var barpro = document.getElementById('barpro');
+      barpro.classList.add('active-bar');
+    }
+  </script>
+  <script>
+      window.onscroll = function() {
+          myFunction1()
+      };
+
+      var navbar = document.getElementById("nabvar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction1() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky");
+          } else {
+              navbar.classList.remove("sticky");
+          }
+      }
+  </script>
+</body>
+
+</html>
